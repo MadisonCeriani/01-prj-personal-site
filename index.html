@@ -6,6 +6,102 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <header class="hero" id="hero">
+    <!-- Planet shapes for the banner background -->
+    <div class="planet planet1"></div>
+    <div class="planet planet2"></div>
+    <div class="planet planet3"></div>
+    <!-- Added stars to the banner using Unicode characters -->
+    <h1>★ Welcome to My Personal Site ★</h1>
+    <p>Showcasing my journey in web development</p>
+  </header>
+
+  <!-- Navigation bar below the banner -->
+  <nav class="navbar">
+    <!-- Navigation links to each section -->
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#bio">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#places">Places</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#projects">Projects</a></li> <!-- Added Projects link -->
+      <li><a href="#contact">Contact</a></li> <!-- Contact link -->
+    </ul>
+  </nav>
+
+  <section class="bio" id="bio">
+    <h2>About Me</h2>
+    <p>Hello! My name is Madison Ceriani. I'm 22 years old. I am a student at Arizona State University and I'm a Technical Communication major. I'm a web development student excited to learn and build new projects. This site will grow as I do!</p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Data Visualization
+
+      </li>
+    </ul>
+  </section>
+
+  <section class="books" id="books">
+    <h2>Favorite Books</h2>
+    <ul>
+      <li>The Mortal Instruments</li>
+      <li>The Hunger Games</li>
+      <li>Little Women</li>
+    </ul>
+  </section>
+
+  <!-- Projects section for your portfolio -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <!-- Short description for beginners -->
+    <p>Here are some of the projects I have worked on in my web development course:</p>
+    <ul>
+      <!-- Example project items, you can edit these later -->
+      <li>
+        <strong>Personal Website</strong> - The site you are viewing now! Built with HTML and CSS.
+      </li>
+      <li>
+        <strong>Simple Portfolio Page</strong> - A basic page to showcase my favorite hobbies.
+      </li>
+      <li>
+        <strong>Favorite Recipes</strong> - A web page listing some of my favorite recipes.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Me section at the bottom -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <!-- Display your name and email address -->
+    <p><strong>Name:</strong> Madison Ceriani</p>
+    <p><strong>Email:</strong> maddi.ceriani@gmail.com</p>
+    <!-- Simple contact form for beginners -->
+    <form>
+      <!-- Name input -->
+      <label for="Name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+      <!-- Email input -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <!-- Message input -->
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+      <!-- Submit button -->
+      <input type="submit" value="Send">
+    </form>
+    <br>
+    <!-- Social links section -->
+    <div class="social-links">
+      <!-- Replace # with your actual LinkedIn and GitHub URLs -->
+      <p>Connect with me:</p>
+      <a href="www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=madison-ceriani-4608a0198" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/MadisonCeriani" target="_blank">GitHub</a>
+    </div>
+  </section>
 </body>
 </html>
