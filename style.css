@@ -9,50 +9,31 @@ body {
 }
 
 header.hero {
-  background: #724ae2;
+  /* Show the banner image and make text visible */
   color: #fff;
-  padding: 2rem 1rem;
+  padding: 10rem 3rem;
   text-align: center;
-  position: relative; /* Needed for absolute positioning of planets */
-  overflow: hidden; /* Hide overflow from planets */
+  position: relative; /* Needed for absolute positioning of overlay */
+  overflow: hidden; /* Hide overflow from overlay */
   /* Set hero-bg.jpg as the background image for the banner */
-  background-image: url('hero-bg.jpg');
+  background-image: url('img/hero-bg.jpg');
   background-size: cover; /* Make the image cover the banner */
   background-position: center; /* Center the image */
 }
 
-/* Planet shapes for the banner background */
-.hero .planet {
+/* Add a darker overlay to the hero banner for better text visibility */
+header.hero::before {
+  content: "";
   position: absolute;
-  border-radius: 50%; /* Make circles */
-  opacity: 0.5; /* Make planets slightly see-through */
-  z-index: 0; /* Behind the text */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 20, 60, 0.5); /* Dark purple overlay, 50% opacity */
+  z-index: 0; /* Behind the text, above the background image */
 }
 
-/* Example planets - you can add more or change colors/sizes */
-.hero .planet1 {
-  width: 80px;
-  height: 80px;
-  background: #ffe066; /* Yellow planet */
-  top: 20px;
-  left: 30px;
-}
-.hero .planet2 {
-  width: 50px;
-  height: 50px;
-  background: #4ae2b8; /* Teal planet */
-  top: 60px;
-  right: 40px;
-}
-.hero .planet3 {
-  width: 100px;
-  height: 100px;
-  background: #e24a6b; /* Pink planet */
-  bottom: -30px;
-  left: 60%;
-}
-
-/* Make sure banner text is above planets */
+/* Make sure banner text is above the overlay */
 .hero h1, .hero p {
   position: relative;
   z-index: 1;
@@ -60,11 +41,13 @@ header.hero {
 
 section {
   background: #fff;
-  margin: 1.5rem auto;
-  padding: 1.5rem;
+  margin: 2.5rem auto;
+  padding: 3.5rem;
   max-width: 600px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 9px;
+  box-shadow: 0 2px 9px rgba(0,0,0,0.05);
+  font-size: larger;
+
 }
 
 /* Increase padding for the Places I Have Visited section */
@@ -73,7 +56,7 @@ section.places {
 }
 
 h2 {
-  background: #724ae2; /* Match site color */
+  /* Removed purple background for headings */
   margin-top: 0;
 }
 
@@ -106,7 +89,7 @@ li {
 
 .navbar a {
   text-decoration: none; /* Remove underline from links */
-  background: #724ae2 /* Match site color */
+  color: #000; /* Make nav text black */
   font-weight: bold;
 }
 
