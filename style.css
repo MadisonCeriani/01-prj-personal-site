@@ -15,8 +15,8 @@ header.hero {
   text-align: center;
   position: relative; /* Needed for absolute positioning of planets */
   overflow: hidden; /* Hide overflow from planets */
-  /* Set a background image for the banner */
-  background-image: url('Image 9-10-25 at 10.45 AM.JPG');
+  /* Set hero-bg.jpg as the background image for the banner */
+  background-image: url('hero-bg.jpg');
   background-size: cover; /* Make the image cover the banner */
   background-position: center; /* Center the image */
 }
